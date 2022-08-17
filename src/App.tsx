@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useUnleashContext, useUnleashClient } from '@unleash/proxy-client-react'
 
 function App() {
+  const updateContext = useUnleashContext;
+  console.log(updateContext);
   return (
     <div className="App">
       <header className="App-header">
